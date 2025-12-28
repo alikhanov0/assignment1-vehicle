@@ -23,6 +23,6 @@ abstract class Vehicle {
     }
 
     void displayInfo() {
-        System.out.printf("Brand: " + brand + "\nYear: " + year);
+        System.out.printf("Brand: " + brand + "\nYear: " + year + "\n");
     }
 }

@@ -1,18 +1,25 @@
-## Getting Started
+# Vehicle Management System
+## Overview
+A Java OOP project demonstrating inheritance, abstraction, composition, and aggregation through a vehicle management system.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Class Hierarchy
+### Vehicle (abstract) – Base class with brand, year, startEngine(), stopEngine()
 
-## Folder Structure
+### Car, Motorcycle, Truck – Subclasses with additional fields and overridden methods
 
-The workspace contains two folders by default, where:
+### Driver – Associated with vehicles (composition/aggregation)
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## How to Run
+```bash
+javac *.java
+java Main
+```
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Screenshots
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+![App Screenshot](lib/Снимок%20экрана%202025-12-29%20030801.png)
 
-## Dependency Management
+## Reflection
+Inheritance allowed sharing common logic in Vehicle, reducing duplication. Method overriding enabled custom engine behaviors per vehicle type.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Using protected access simplified subclass field usage, while default access required careful package structuring to maintain encapsulation.
